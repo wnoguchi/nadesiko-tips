@@ -1,0 +1,54 @@
+母艦のタイトルは「菱形ジェネレーター」
+母艦の幅は1000
+母艦の高さは1000
+
+p=1000
+100回
+	菱形表示(pの乱数, pの乱数)
+
+●菱形表示（X,Y）
+    Xf=0
+    Yf=0
+    Xt=X
+    Yt=Y
+    Vx=0
+    Vy=0
+    
+    Vx=100
+    Vy=100
+    Xf=Xt
+    Yf=Yt
+    Xt=Xf+Vx
+    Yt=Yf+Vy
+    Xf,YfからXt,Ytへ線
+    Vx=100
+    Vy=-100
+    Xf=Xt
+    Yf=Yt
+    Xt=Xf+Vx
+    Yt=Yf+Vy
+    #「{Xf},{Yf}
+    #{Xt},{Yt}」と表示
+    Xf,YfからXt,Ytへ線
+    Vx=-100
+    Vy=-100
+    Xf=Xt
+    Yf=Yt
+    Xt=Xf+Vx
+    Yt=Yf+Vy
+    #「{Xf},{Yf}
+    #{Xt},{Yt}」と表示
+    Xf,YfからXt,Ytへ線
+    Vx=-100
+    Vy=100
+    Xf=Xt
+    Yf=Yt
+    Xt=Xf+Vx
+    Yt=Yf+Vy
+    Xf,YfからXt,Ytへ線
+    戻る
+
+#100,100から200,200へ線
+#200,200から300,100へ線
+#300,100から200,0へ線
+#200,0から100,100へ線
